@@ -34,13 +34,14 @@ class CarrouselCircleImg extends StatelessWidget {
                   onTap:  () async {
               await showDialog(
                   context: context,
-                  builder: (_) => DialogContainer(image: "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2021/08/stitch-png-clipart.png?resize=600%2C600&ssl=1"));
+                  builder: (_) => DialogContainer(image: "imglogo.png"));
                   },
                   child: ClipRRect(
                 borderRadius: BorderRadius.circular(30),
                 child: const Image(
                   fit: BoxFit.cover,
-                  image: NetworkImage("https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2021/08/stitch-png-clipart.png?resize=600%2C600&ssl=1"),
+                  // image: NetworkImage("https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2021/08/stitch-png-clipart.png?resize=600%2C600&ssl=1"),
+                  image: AssetImage('assets/images/imglogo.png')
                 ),
               ),
                 ),

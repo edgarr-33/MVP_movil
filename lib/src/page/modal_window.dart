@@ -17,9 +17,10 @@ class DialogContainer extends StatelessWidget {
               width: 200,
               height: 130,
               margin: const EdgeInsets.only(top: 20, bottom: 20),
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(image),
+                  image: AssetImage('assets/images/imglogo.png')
+                  // image: NetworkImage(image),
                 ),
               ),
             ),

@@ -60,12 +60,13 @@ class _CarrouselImageState extends State<CarrouselImage> {
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      image: const DecorationImage(
+                      image:const DecorationImage(
                         fit: BoxFit.cover,
                         alignment: FractionalOffset.center,
-                        image: NetworkImage(
-                          "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2021/08/stitch-png-clipart.png?resize=600%2C600&ssl=1",
-                        ),
+                        image: AssetImage('assets/images/imglogo.png')
+                        // image: NetworkImage(
+                        //   "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2021/08/stitch-png-clipart.png?resize=600%2C600&ssl=1",
+                        // ),
                       ),
                     ),
                   ),
