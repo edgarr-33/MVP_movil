@@ -31,7 +31,7 @@ class DialogContainer extends StatelessWidget {
               ),
             ),
             const Text(
-              'Pokebola, contiene un pokemon',
+              'Ohana significa familia, y tu familia nunca te abandona ni te olvida',
               textAlign: TextAlign.center,
             ),
           ],

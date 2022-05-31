@@ -15,29 +15,30 @@ class _OnBoardingState extends State<OnBoarding> {
   int pages = 0;
   PageController controller = PageController(initialPage: 0);
   List<Map<String, String>> onBoardingDatas = [
+    
     {
-      "text": "ejemplo",
-      "text1": "ejemplo ejemplo ejemplo ejemplo",
+      "title": "ESPARCIMIENTO",
+      'subtitle': 'Brindamos todos los servicios para consentir',
       "image": "assets/images/B1.png",
     },
     {
-      "text": "ejemplo",
-      "text1": "ejemplo ejemplo ejemplo ejemplo",
+      "title": "ADOPCIÓN",
+      'subtitle': 'Brindamos todos los servicios para consentir',
       "image": "assets/images/B2.png",
     },
     {
-      "text": "ejemplo",
-      "text1": "ejemplo ejemplo ejemplo ejemplo",
+      "title": "HOSPITALIDAD",
+      'subtitle': 'Brindamos todos los servicios para consentir',
       "image": "assets/images/B3.png",
     },
     {
-      "text": "ejemplo",
-      "text1": "ejemplo ejemplo ejemplo ejemplo",
+      "title": "VETERINARIA",
+      'subtitle': 'Brindamos todos los servicios para consentir',
       "image": "assets/images/B4.png",
     },
     {
-      "text": "ejemplo",
-      "text1": "ejemplo ejemplo ejemplo ejemplo",
+      "title": "TIENDA",
+      'subtitle': 'Brindamos todos los servicios para consentir',
       "image": "assets/images/B5.png",
     },
   ];
@@ -63,8 +64,8 @@ class _OnBoardingState extends State<OnBoarding> {
                     },
                     itemCount: onBoardingDatas.length,
                     itemBuilder: (context, index) => ContentBoarding(
-                      text: onBoardingDatas[index]["text"]!,
-                      text1: onBoardingDatas[index]["text1"]!,
+                      text: onBoardingDatas[index]["title"]!,
+                      text1: onBoardingDatas[index]["subtitle"]!,
                       image: onBoardingDatas[index]["image"]!,
                     ),
                   ),

@@ -165,6 +165,7 @@ class _RegistroState extends State<Registro> {
                         borderRadius: BorderRadius.circular(50)),
                   ),
                   Container(
+                    width: 350,
                     alignment: Alignment.center,
                     padding: EdgeInsets.all(10),
                     child: const Center(
@@ -220,6 +221,7 @@ class _RegistroState extends State<Registro> {
                         } else {
                           register(fullname!, email!, password!).then((value) {
                             print(value);
+                            print(value);
                             if (value) {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(
@@ -245,7 +247,7 @@ class _RegistroState extends State<Registro> {
                 ),
               ),
               Container(
-                  width: 300,
+                  width: 350,
                   margin: const EdgeInsets.only(top: 30, left: 50),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,

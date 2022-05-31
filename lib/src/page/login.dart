@@ -162,7 +162,7 @@ class _LoginPageState extends State<LoginPage> {
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     const SnackBar(
                                       duration: Duration(milliseconds: 1000),
-                                      content: Text('Contraseña incorrecta'),
+                                      content: Text('Usuario o Contraseña incorretos'),
                                     ),
                                   );
                                 }
@@ -176,8 +176,8 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
               Container(
-                  width: 300,
-                  margin: const EdgeInsets.only(top: 30, left: 50),
+                  width: 350,
+                  margin: const EdgeInsets.only(top: 30, ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children:  [

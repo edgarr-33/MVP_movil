@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 Future<bool> register(String fullname, String email, String password) async {
   Map<String, String> headers = {'Content-Type': 'application/json'};
   String registerAPI = '/api/register/';
-  String host = '192.168.0.7:3000';
+  String host = '192.168.1.76:3000';
 
   try {
     final response = await http.post(

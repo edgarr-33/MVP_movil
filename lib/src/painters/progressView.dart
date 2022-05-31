@@ -48,18 +48,17 @@ class _ProgressViewState extends State<ProgressView> {
   void updateProgress() {
     Timer.periodic(
       const Duration(
-        milliseconds: 400
+        milliseconds: 10
       ), (timer) {
         if (progress == 100) {
           Navigator.pushReplacementNamed(context, 'home');
         }
         else {
           setState(() {
-            progress = progress + 10;
+            progress = progress + 1;
           });
         }
     });
   }
 }
-
 
